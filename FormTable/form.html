@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- https://google.com/search -->
+    <form action="#" method="get">
+        <table>
+            <tr>
+                <td>Keyword</td>
+                <td><input type="text" name="q"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="pw">
+                </td>
+            </tr>
+            <tr>
+                <td>Mail box</td>
+                <td>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>Website</td>
+                <td>
+                    <input type="url" name="website" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Languages</td>
+                <td>
+                    <input type="checkbox" checked> English
+                    <input type="checkbox"> Korean
+                    <input type="checkbox"> Thailand
+                    <input type="checkbox"> Japan
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" checked> Male
+                    <input type="radio" name="gender"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>My color</td>
+                <td>
+                    <input type="color">
+                </td>
+            </tr>
+            <tr>
+                <td>Upload avatar</td>
+                <td>
+                    <input type="file" accept="image/*">
+                </td>
+            </tr>
+            <tr>
+                <td>Dob</td>
+                <td>
+                    <input type="date" min="2022-01-01" max="2022-12-31">
+                    <input type="time">
+                    <br>
+                    <input type="month">
+                    <br>
+                    <input type="week">
+                    <br>
+                    <input type="datetime-local">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Save</button>
+                </td>
+            </tr>
+        </table>
+
+        
+    </form>
+</body>
+</html>
