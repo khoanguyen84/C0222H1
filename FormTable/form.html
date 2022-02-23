@@ -8,11 +8,58 @@
 </head>
 <body>
     <!-- https://google.com/search -->
-    <form action="#" method="get">
+    <form action="#" method="post">
         <table>
             <tr>
                 <td>Keyword</td>
-                <td><input type="text" name="q"></td>
+                <td>
+                    <input type="text" name="q" autocomplete="off"> <br>
+                    <input type="search" name="s" placeholder="keyword">
+                    <input type="hidden" name="securityCode" value="CGH">
+                </td>
+            </tr>
+            <tr>
+                <td>Province</td>
+                <td>
+                    <select name="" id="">
+                        <option value="-1" disabled>Select a province</option>
+                        <option value="1">Thừa Thiên Huế</option>
+                        <option value="2">Đà Nẵng</option>
+                        <option value="3">Nha Trang</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="desc">Description</label>
+                </td>
+                <td>
+                    <textarea name="" id="desc" cols="30" rows="10"></textarea>                    
+                </td>
+            </tr>
+            <tr>
+                <td>Avatar</td>
+                <td>
+                    <input type="image" src="images/logo.png" style="width:100px; height:100px;">
+                </td>
+            </tr>
+            <tr>
+                <td>Telephone</td>
+                <td>
+                    <input type="tel" name="phone">
+                </td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>
+                    <input type="number" name="id">
+                </td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td>
+                    <input type="range" min="18" max="80">
+                </td>
             </tr>
             <tr>
                 <td>Password</td>
@@ -75,7 +122,11 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <button type="submit">Save</button>
+                    <input type="button" value="Info">
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Cancel">
+                    <button type="reset">Save</button>
+                    
                 </td>
             </tr>
         </table>
