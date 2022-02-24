@@ -28,6 +28,14 @@
             </caption>
             <tbody>
                 <tr>
+                    <td>Change color</td>
+                    <td>
+                        <!-- <input type="range" min="15" max="30"> -->
+                        <!-- <input id="color" type="color" onchange="changeColor()"> -->
+                        <input id="color" type="color" oninput="changeColor()">
+                    </td>
+                </tr>
+                <tr>
                     <td>Họ và Tên</td>
                     <td>
                         <input type="text">
@@ -37,6 +45,14 @@
                     <td>Email</td>
                     <td>
                         <input type="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" onchange="document.querySelector('#spw').value = this.value">
+                        <br>
+                        <input id="spw" type="text">
                     </td>
                 </tr>
                 <tr>
@@ -86,6 +102,12 @@
             </tbody>
         </table>
     </form>
+    <script>
+        function changeColor(){
+            // console.log(document.getElementById('color').value)
+            document.getElementsByTagName('form')[0].style.backgroundColor = document.getElementById('color').value
+        }
+    </script>
     <script src="home.js"></script>
 </body>
 
