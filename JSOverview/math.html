@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Number 1</td>
+            <td>
+                <input type="number" name="number1">
+            </td>
+        </tr>
+        <tr>
+            <td>Number 2</td>
+            <td><input type="number" name="number2"></td>
+        </tr>
+        <tr>
+            <td>Result</td>
+            <td><input type="number" name="result"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button onclick="sum()">Sum</button></td>
+        </tr>
+    </table>
+    <script>
+        function sum(){
+            // debugger;
+            // s1: get value of number 1  
+            let number1 = document.getElementsByName("number1")[0].value;
+            // s2: get value of number 2   
+            let number2 = document.getElementsByName("number2")[0].value;
+            // s3: calcutator sum of number 1 and number 2
+            // console.log("number1: ", number1);
+            // console.log("number2: ", number2);
+            // console.log("datatype number1: ", typeof number1);
+            // console.log("datetype number2: ", typeof number2);
+            let result = number1 + number2;
+            // console.log("result: ", result);
+            // s4 : assgin sum value into result
+            document.getElementsByName("result")[0].value = result;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Overview</title>
+</head>
+<body>
+    <button onmouseover="this.innerHTML = new Date()"
+        onmouseout="this.innerHTML='Hover to show current time'"
+        ondblclick="alert(new Date())"
+    >Hover to show current time</button>
+    <br>
+    <p onmouseover="this.style.color='red'; this.style.fontSize='40px'">CodeGym Huế</p>
+    <h1 onmouseover="document.getElementsByTagName('h1')[1].style.color='red'"
+    >Hover to me and react to the second h1</h1>
+    <h1>CodeGym</h1>
+    <button onmouseover="showTime()"
+        onmouseout="hiddenTime()"
+        ondblclick="showHello()"
+    >Hover to show current time</button>
+    <script>
+        // function showTime(){
+        //     document.getElementsByTagName("button")[1].innerHTML = new Date();
+        // }
+        // function hiddenTime(){
+        //     document.getElementsByTagName("button")[1].innerHTML = "Hover to show current time";
+        // }
+    </script>
+    <script src="home.js"></script>
+</body>
+</html>

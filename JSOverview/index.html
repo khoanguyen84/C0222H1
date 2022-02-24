@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #tbRegister>tbody>tr>td:first-child{
+            color:blue;
+        }
+
+        #tbHobbies td{
+            color:orange;
+        }
+    </style>
+</head>
+
+<body>
+    <form accept="#" style="border: 20px solid green;width: 500px;padding:0px;">
+        <table id="tbRegister" style="width:100%;">
+            <caption>
+                <h1 style="background-color: orange;">SỞ THÍCH CỦA BẠN</h1>
+            </caption>
+            <tbody>
+                <tr>
+                    <td>Họ và Tên</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sở thích</td>
+                    <td>
+                        <table id="tbHobbies">
+                            <tr>
+                                <td>
+                                    <input type="checkbox"> Thể thao
+                                </td>
+                                <td>
+                                    <input type="checkbox"> Thể thao
+                                </td>
+                                <td>
+                                    <input type="checkbox"> Thể thao
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox"> Thể thao
+                                </td>
+                                <td>
+                                    <input type="checkbox"> Thể thao
+                                </td>
+                                <td>
+                                    <input type="checkbox"> Thể thao
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox"> Thể thao
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <!-- <input type="submit" value="Gửi thông tin">
+                        <input type="reset" value="Nhập lại"> -->
+                        <button type="submit">Gửi thông tin</button>
+                        <button type="reset" onmousemove="showTime()"
+                        onmouseout="hiddenTime()">Nhập lại</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <script src="home.js"></script>
+</body>
+
+</html>
