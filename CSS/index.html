@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+
+<body>
+    <div id="dA">A</div>
+    <div id="dB">B</div>
+    <p>Lorem  Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <p>Lorem  Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <table>
+        <tr>
+            <td>Chọn cơ sở cách ly</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="CSCL" oninput="chonCSCL()"> Cơ sở cách ly tập trung
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="CSCL" oninput="chonCSCL()"> Cơ sở cách ly tự chọn
+                <br>
+                <select id="cscltc" style="">
+                    <option value="1">Ở nhà</option>
+                    <option value="2">Khách sạn</option>
+                    <option value="1">Bệnh viện dã chiến</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="CSCL" oninput="chonCSCL()"> Khác
+                <br>
+                <input type="email" required id="other">
+            </td>
+        </tr>
+    </table>
+    <table id="student" border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tbStudent">
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">
+                    <button class="btn" onclick="addStudent()">remove</button>
+                    <br>
+                    <button onclick="addStudent()">Add</button>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <div>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+    </div>
+    <script>
+        var increment = 0;
+        function addStudent() {
+            let tbody = document.querySelector("#tbStudent");
+            ++increment;
+            tbody.innerHTML +=
+                `<tr id="tr_${increment}">
+                                <td>${increment}</td>
+                                <td>Khoa</td>
+                                <td>khoa.nguyen@codegym.vn</td>
+                                <td>
+                                    <button onclick="remove(${increment})">Remove</button>
+                                </td>
+                            </tr>
+                            `
+        }
+
+        function remove(index) {
+            // document.querySelector("#tbStudent").children[index-1].remove()
+            document.querySelector(`#tr_${index}`).remove();
+        }
+        function chonCSCL() {
+            let coSoCachLy = document.getElementsByName("CSCL");
+            if (coSoCachLy[2].checked) {
+                document.querySelector("#other").type = "text";
+                document.querySelector('#cscltc').style.display = "none";
+            }
+            else {
+                if (coSoCachLy[1].checked) {
+                    document.querySelector('#cscltc').style.display = "block";
+                }
+                else {
+                    document.querySelector("#other").type = "hidden";
+                    document.querySelector('#cscltc').style.display = "none";
+                }
+            }
+        }
+    // document.getElementById()
+    // document.getElementsByClassName()
+    // document.getElementsByName()
+    // document.getElementsByTagName()
+    // document.querySelector()
+    // document.querySelectorAll()
+    </script>
+</body>
+
+</html>
