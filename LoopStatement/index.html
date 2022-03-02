@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let num = Number(prompt("Enter a number"));
+        // while (Number.isInteger(num) && num != 0) {
+        //     document.write(num);
+        //     num = Number(prompt("Enter a number"));
+        // }
+
+        // let number;
+        // do{
+        //     number = Number(prompt("Enter a number"));
+        //     document.write(number);
+        // }
+        // while(Number.isInteger(num) && num != 0)
+        // let number;
+        // do {
+        //     number = Number(prompt("nhap mot so bat ky:"));
+        // } while (!Number.isInteger(number));
+        // document.write(number);
+
+        let number;
+        number = Number(prompt("nhap mot so bat ky:"));
+        for (; Number.isInteger(number) && number != 0;) {
+            for(let i=2; i<= number; i+=2){
+                document.write(i + ', ');
+            }
+            document.write("<br>");
+            number = Number(prompt("nhap mot so bat ky:"));
+        }
+        
+    </script>
+</body>
+
+</html>
