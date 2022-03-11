@@ -80,15 +80,26 @@ han.email = "han@gmail.com"
 //     return total
 // }
 
-function sum(...paras) {
-    let total = 0;
-    for (let i = 0; i < paras.length; i++) {
-        total += paras[i]
-    }
-    return total
-}
+// function sum(...paras) {
+//     let total = 0;
+//     for (let i = 0; i < paras.length; i++) {
+//         total += paras[i]
+//     }
+//     return total
+// }
 
-let numbers = [1,2,3,4,5,6,7,7,8]
+// let numbers = [1,2,3,4,5,6,7,7,8]
 
-console.log(sum(...numbers))
+// console.log(sum(...numbers))
 // console.log(sum(1,2,3,4,5,6,7,7,8))
+let numbers = [1,2,3,4,5,6,7,7,8];
+// let so = [];
+// for(let i in numbers){
+//     so[i] = numbers[i]
+// }
+
+let so = [1,2,3,4,5,6,7,7,8]
+
+so[0] = 100;
+console.log(numbers);
+console.log(so)
