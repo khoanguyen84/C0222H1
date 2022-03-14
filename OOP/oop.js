@@ -26,7 +26,10 @@ let khoa = {
     age: 18,
     gender: true,
     hobbies: ["football", "swimming", "walking"],
-    email: "khoa.nguyen@codegym.vn"
+    email: "khoa.nguyen@codegym.vn",
+    greeting : function(){
+        return `Hello, my name is ${this.gender ? "Mr" : "Ms"}.${this.fullname}, Iam ${this.age} years old`
+    }
 }
 
 // let han = {
@@ -92,14 +95,17 @@ han.email = "han@gmail.com"
 
 // console.log(sum(...numbers))
 // console.log(sum(1,2,3,4,5,6,7,7,8))
-let numbers = [1,2,3,4,5,6,7,7,8];
+let numbers = [1, 2, 3, 4, 5, 6, 7, 7, 8];
 // let so = [];
 // for(let i in numbers){
 //     so[i] = numbers[i]
 // }
 
-let so = [1,2,3,4,5,6,7,7,8]
+let so = [1, 2, 3, 4, 5, 6, 7, 7, 8]
 
-so[0] = 100;
-console.log(numbers);
-console.log(so)
+// so[0] = 100;
+// console.log(numbers);
+// console.log(so)
+
+
+console.log(Array)
