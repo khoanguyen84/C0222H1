@@ -109,3 +109,21 @@ let so = [1, 2, 3, 4, 5, 6, 7, 7, 8]
 
 
 console.log(Array)
+
+function manageUser(){
+    let fullname = "";
+    const user = {
+        setName(name){
+            fullname = name
+        },
+        getName(){
+            return fullname
+        }
+    }
+
+    return user;
+}
+
+let app = manageUser();
+app.setName("khoa")
+console.log(app.getName())
