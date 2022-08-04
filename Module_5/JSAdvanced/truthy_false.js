@@ -12,8 +12,8 @@
 // console.log(`${name == null ? 'no name' : name}`);
 // console.log(`${name == "" || name == null ? 'no name' : name}`);
 
-let speakers = [];
-console.log((speakers.length && speakers.includes("Khoa")))
+// let speakers = [];
+// console.log((speakers.length && speakers.includes("Khoa")))
 
 
 
