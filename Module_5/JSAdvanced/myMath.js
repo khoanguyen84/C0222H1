@@ -24,6 +24,7 @@ export function subtract(...rest){
 
     return result;
 }
+
 export default additional;
 
 // {
