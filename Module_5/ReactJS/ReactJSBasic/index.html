@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactJS Basic</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+    <!-- <h1>Chào anh em</h1> -->
+    <div id="root">
+
+    </div>
+    <!-- <script type="text/babel" src="jsx.js"></script> -->
+    <script type="text/babel">
+        const divJSX = (
+            <div class="post-item">
+                <h3 className="heading_3" title="title">sunt aut facere repellat provident occaecati excepturi optio reprehenderit</h3>
+                <p className="para">quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto</p>
+            </div>
+        )
+        ReactDOM.render(divJSX, document.querySelector("#root"));
+    </script>
+    <!-- <script src="javascript.js"></script> -->
+</body>
+
+</html>
