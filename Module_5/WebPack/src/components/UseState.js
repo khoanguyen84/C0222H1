@@ -1,7 +1,16 @@
 import React, { useState } from "react";
 function UseState() {
     const [count, setCount] = useState(0);
-    const increment = () => setCount(count + 1);
+    console.log('render');
+    const increment = function(){
+        setCount(count + 1);
+        setCount(count + 1);
+        setCount(count + 1);
+        setCount(count + 1);
+        // setCount((preCount) => preCount + 1);
+        // setCount((preCount) => preCount + 1);
+        // setCount((preCount) => preCount + 1);
+    };
     return (
         <div>
             <h1>{count}</h1>

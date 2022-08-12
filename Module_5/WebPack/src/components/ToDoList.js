@@ -2,6 +2,7 @@ import React, { useState } from "react";
 function ToDoList(){
     const [jobs, setJobs ] = useState([]);
     const [job, setJob] = useState('');
+    console.log("render")
     const handleAddJob = function(){
         setJob("");
         setJobs([...jobs, job]);
